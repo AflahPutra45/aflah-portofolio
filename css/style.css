@@ -128,7 +128,7 @@ img { max-width: 100%; display: block; }
 }
 .hero-text {
   display: flex; flex-direction: column; justify-content: center;
-  padding: 120px 0 80px;
+  padding: 80px 0 80px;
 }
 .hero-greeting { font-size: 1.1rem; color: var(--accent); font-weight: 500; margin-bottom: 12px; }
 .hero-name {
