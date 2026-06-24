@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aflah Putra – Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AA<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Achmad Adelard<br /><span>Aflah Afi Putra</span></h1>
+        <p class="hero-tagline">Digital Business Student · Operations Manager · Youth Advocate</p>
+        <p class="hero-sub">Indonesia Youth Representative, Washington D.C. · SEAMEO Bronze Medalist · YAB Save the Children</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://linkedin.com/in/achmad-adelard-aflah" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+          <a href="https://github.com/AflahPutra45" target="_blank" rel="noopener" class="social-link">GitHub</a>
+          <a href="mailto:aflahputra45@gmail.com" class="social-link">Email</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <img src="assets/images/profile.jpg" alt="Aflah Putra" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+            <div class="photo-fallback">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="30" r="16" fill="rgba(99,179,237,0.4)" stroke="rgba(99,179,237,0.7)" stroke-width="1.5"/>
+                <path d="M10 70c0-16.569 13.431-30 30-30s30 13.431 30 30" fill="rgba(99,179,237,0.2)" stroke="rgba(99,179,237,0.7)" stroke-width="1.5"/>
+              </svg>
+              <span>Add Profile Photo</span>
+            </div>
+          </div>
+          <div class="photo-ring"></div>
+          <div class="photo-badge">
+            <span>🌍</span>
+            <span>Washington D.C. 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Bridging Business,<br />Tech &amp; Social Impact</h2>
+          <p>Digital Business student at <strong>UPN "Veteran" Jawa Timur</strong> with 6+ years of hands-on experience managing end-to-end business operations at PT. Sevenluck Indonesia.</p>
+          <p>Officially selected as <strong>Youth Advisory Board (YAB)</strong> member of Save the Children's Skills to Succeed program (2026–2028), and previously served as <strong>Indonesia Youth Representative</strong> at an international forum in Washington D.C. alongside delegates from World Bank, Aspen Institute, and Georgetown University.</p>
+          <p>Skilled in business operations, data analytics, UI/UX, and AI-assisted workflows — with a passion for creating real-world impact through technology.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Years Operations</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3.63</span>
+              <span class="stat-label">GPA / 4.00</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">8+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Int'l Delegations</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="info-card-icon">🎓</div>
+            <div>
+              <h4>Education</h4>
+              <p>S1 Digital Business<br />UPN "Veteran" Jawa Timur</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Surabaya, Jawa Timur<br />Indonesia</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">🌐</div>
+            <div>
+              <h4>Languages</h4>
+              <p>Indonesian (Native)<br />English (TOEFL 550)</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <p>aflahputra45@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-label">Experience</div>
+      <h2 class="section-title">Where I've Been &amp;<br />What I've Done</h2>
+
+      <div class="exp-tabs">
+        <button class="tab-btn active" data-tab="international">🌍 International</button>
+        <button class="tab-btn" data-tab="work">💼 Work</button>
+        <button class="tab-btn" data-tab="org">🤝 Organizational</button>
+        <button class="tab-btn" data-tab="education">🎓 Education</button>
+      </div>
+
+      <!-- International -->
+      <div class="tab-content active" id="tab-international">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Youth Representative – Indonesia Delegate</h3>
+                  <p class="timeline-org">Save the Children – Skills to Succeed (S2S) Program</p>
+                </div>
+                <span class="timeline-date">May 2026</span>
+              </div>
+              <p class="timeline-location">📍 Washington D.C., USA</p>
+              <ul>
+                <li>Selected as one of two Indonesian Youth Representatives to the "Leaders of Change: Youth, AI, and the Future of Work" international forum alongside 30+ delegates from World Bank, CARE, Aspen Institute, IREX, Georgetown University, and the Washington D.C. Government.</li>
+                <li>Delivered a live on-stage interview with the CEO of Ignite Collective Leadership, representing Indonesia's youth perspective on AI's impact on employment and inclusive economic access.</li>
+                <li>Participated in three expert-facilitated breakout tracks: AI for Career Development (IYF), AI Skills for Workforce Readiness (RTI), and AI for Economic Inclusion.</li>
+                <li>Completed pre-event preparation sessions with Monica Caminiti (Managing Director, Save the Children Corporate Partnerships).</li>
+              </ul>
+              <div class="timeline-photos">
+                <div class="exp-photo-placeholder" data-label="Event Photo 1"></div>
+                <div class="exp-photo-placeholder" data-label="Event Photo 2"></div>
+                <div class="exp-photo-placeholder" data-label="Event Photo 3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>International Delegate &amp; Contestant – 2nd SEAMEO Science Olympiad</h3>
+                  <p class="timeline-org">SEAMEO RECSAM</p>
+                </div>
+                <span class="timeline-date">March 2023</span>
+              </div>
+              <p class="timeline-location">📍 Penang, Malaysia</p>
+              <ul>
+                <li>Represented Indonesia as an official international delegate at the 2nd SEAMEO Science Olympiad (SEASO 2023), held 6–10 March 2023.</li>
+                <li>Awarded <strong>Best Completer Finisher Award &amp; Bronze Medal</strong> (2nd Runner-Up, Vocational School Category) — dual recognition as one of only a handful of Indonesian students.</li>
+                <li>Recognized by East Java Governor Khofifah Indar Parawansa with a Certificate of Honor for representing East Java at an international level.</li>
+              </ul>
+              <div class="timeline-photos">
+                <div class="exp-photo-placeholder" data-label="SEAMEO Photo 1"></div>
+                <div class="exp-photo-placeholder" data-label="SEAMEO Photo 2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work -->
+      <div class="tab-content" id="tab-work">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Operations &amp; Marketing Manager</h3>
+                  <p class="timeline-org">PT. Sevenluck Indonesia (Sevenluck Apparel)</p>
+                </div>
+                <span class="timeline-date">2020 – Present</span>
+              </div>
+              <p class="timeline-location">📍 Surabaya, Indonesia</p>
+              <ul>
+                <li>Managed full operational workflow of a garment and custom print business: production scheduling, quality control, and order fulfillment.</li>
+                <li>Handled all customer-facing activities including price negotiation, order coordination, and client relationship management.</li>
+                <li>Supervised digital screen printing production process, ensuring quality and delivery standards.</li>
+                <li>Maintained financial records and managed cash flow tracking using spreadsheets.</li>
+                <li>Created marketing content and digital design assets using CorelDraw, Photoshop, and Canva.</li>
+                <li>Coordinated team workflow and vendor communication to ensure operational efficiency.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Freelance Graphic Designer</h3>
+                  <p class="timeline-org">Upwork (Remote)</p>
+                </div>
+                <span class="timeline-date">2022 – 2023</span>
+              </div>
+              <ul>
+                <li>Designed custom T-shirt graphics for international clients via Upwork platform.</li>
+                <li>Managed client briefs, revisions, and project delivery independently.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organizational -->
+      <div class="tab-content" id="tab-org">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot accent"></div>
+            <div class="timeline-card highlight">
+              <div class="timeline-header">
+                <div>
+                  <h3>Member – Youth Advisory Board (YAB)</h3>
+                  <p class="timeline-org">Save the Children – Skills to Succeed (S2S) Program</p>
+                </div>
+                <span class="timeline-date">June 2026 – 2028</span>
+              </div>
+              <ul>
+                <li>Officially selected as one of 7 YAB members representing East Java (Surabaya) — competitive selection from hundreds of S2S alumni across East Java and West Java.</li>
+                <li>Mandated to provide policy recommendations, initiate at least one real project per year, and participate in regional, national, and global forums on youth employment and entrepreneurship.</li>
+                <li>Full logistical support from Save the Children, including access to an international network of NGOs, foundations, and multi-stakeholder organizations.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Member – Youth Advisory Council (YAC) – IT Department</h3>
+                  <p class="timeline-org">Save the Children – Skills to Succeed (S2S) Program</p>
+                </div>
+                <span class="timeline-date">2023 – 2024</span>
+              </div>
+              <ul>
+                <li>Contributed to content planning and social media management for an international youth advocacy program.</li>
+                <li>Actively engaged in advocacy initiatives focused on youth employment and entrepreneurship in East Java.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="tab-content" id="tab-education">
+        <div class="edu-grid">
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-body">
+              <h3>S1 Digital Business</h3>
+              <p class="edu-school">UPN "Veteran" Jawa Timur, Surabaya</p>
+              <p class="edu-period">2024 – Present · Faculty of Computer Science</p>
+              <div class="edu-gpa"><span>GPA</span> <strong>3.63 / 4.00</strong></div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon">🏫</div>
+            <div class="edu-body">
+              <h3>Vocational High School – Information Systems &amp; Networking (SIJA)</h3>
+              <p class="edu-school">SMK Negeri 2 Surabaya</p>
+              <p class="edu-period">2020 – 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Things I've Built</h2>
+      <p class="section-desc">A selection of academic, personal, and professional projects. More available on GitHub.</p>
+
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="data">Data & BI</button>
+        <button class="filter-btn" data-filter="business">Business</button>
+        <button class="filter-btn" data-filter="personal">Personal</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card" data-category="personal web">
+          <div class="project-img">
+            <img src="assets/images/projects/smartpos.png" alt="Sevenluck SMARTPOS" onerror="this.style.display='none'" />
+            <div class="project-img-placeholder">
+              <span>SMARTPOS</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/AflahPutra45" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">React 19</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Personal</span>
+            </div>
+            <h3>Sevenluck SMARTPOS</h3>
+            <p>Full-stack business management app for PT. Sevenluck Indonesia — covers sales, order management, production tracking, inventory, expenses, and financial reporting. Features Kanban board, invoice PDF export, and SPK print.</p>
+            <div class="project-links">
+              <a href="https://github.com/AflahPutra45" target="_blank" rel="noopener" class="btn-sm">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="personal web">
+          <div class="project-img">
+            <div class="project-img-placeholder"><span>SPK TOPSIS</span></div>
+            <div class="project-overlay">
+              <a href="https://github.com/AflahPutra45" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">React 19</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">Personal</span>
+            </div>
+            <h3>SPK TOPSIS – Intern Selection DSS</h3>
+            <p>Web-based Decision Support System using the TOPSIS method to rank intern candidates on weighted multi-criteria evaluation. Full pipeline from scratch: normalization, ideal solutions, and preference ranking.</p>
+            <div class="project-links">
+              <a href="https://github.com/AflahPutra45" target="_blank" rel="noopener" class="btn-sm">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="data">
+          <div class="project-img">
+            <div class="project-img-placeholder"><span>BI Dashboard</span></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link">View Project →</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Looker Studio</span>
+              <span class="tag">Data Analytics</span>
+              <span class="tag">Academic</span>
+            </div>
+            <h3>Business Intelligence Dashboard – Sevenluck Apparel</h3>
+            <p>Interactive BI dashboard visualizing 9,329 sales transactions from 267 customers (2023–2026). Reveals Rp691M revenue dominated by B2B corporate segment (62.5%). Published in Jurnal Sistem Informasi (TEKNOFILE).</p>
+            <div class="project-links">
+              <a href="#" class="btn-sm">View Publication</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder"><span>HustlerGate</span></div>
+            <div class="project-overlay">
+              <a href="https://github.com/AflahPutra45" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML/CSS/JS</span>
+              <span class="tag">Fintech</span>
+              <span class="tag">Academic</span>
+            </div>
+            <h3>HustlerGate – Freelancer Financial Dashboard</h3>
+            <p>Multi-currency financial management dashboard integrating PayPal, Wise, Binance, and BCA account tracking. Features financial stability scoring, revenue vs. runway visualization, and fund allocation module.</p>
+            <div class="project-links">
+              <a href="https://github.com/AflahPutra45" target="_blank" rel="noopener" class="btn-sm">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder"><span>PRIMA JATIM</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">DSS</span>
+              <span class="tag">System Design</span>
+              <span class="tag">Academic</span>
+            </div>
+            <h3>PRIMA JATIM – Government Project Monitoring System</h3>
+            <p>Web-based Decision Support System for monitoring East Java provincial government projects. Defined 15 functional requirements for multi-actor system (BPKP auditors, OPD, admin) with real-time monitoring and risk profiling.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="business">
+          <div class="project-img">
+            <div class="project-img-placeholder"><span>Camp-Cuss</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Figma</span>
+              <span class="tag">Startup</span>
+              <span class="tag">Academic</span>
+            </div>
+            <h3>Camp-Cuss – Digital Campus Transportation Startup</h3>
+            <p>Co-Founder & CFO of a digital campus transportation startup. Conducted market research (89 respondents), developed BMC, and projected revenue streams across transportation and advertising services.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder"><span>Sevenluck E-Com</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Figma</span>
+              <span class="tag">UI/UX</span>
+              <span class="tag">Academic</span>
+            </div>
+            <h3>Sevenluck Apparel E-Commerce Prototype</h3>
+            <p>UI/UX prototype of a print-on-demand e-commerce website covering Home, Product, Portfolio, About Us, and Contact. Features product catalog with material/color selection and WhatsApp ordering integration.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder"><span>Byvelli</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3>Byvelli – E-Commerce Website</h3>
+            <p>Functional product gallery website built with pure HTML5, CSS3, and JavaScript — no frameworks. Responsive grid layout, hover interactions, and structured product display for a homemade food brand.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title">Tools &amp; Capabilities</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-icon">🎨</div>
+          <h3>Design &amp; Creative</h3>
+          <div class="skill-tags">
+            <span>CorelDraw</span>
+            <span>Adobe Photoshop</span>
+            <span>Canva</span>
+            <span>Figma</span>
+            <span>UI/UX Prototyping</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">💻</div>
+          <h3>Web Development</h3>
+          <div class="skill-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">📊</div>
+          <h3>Data &amp; Analytics</h3>
+          <div class="skill-tags">
+            <span>Google Looker Studio</span>
+            <span>Google Sheets</span>
+            <span>Microsoft Excel</span>
+            <span>Data Visualization</span>
+            <span>Business Intelligence</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">🤖</div>
+          <h3>AI &amp; Productivity</h3>
+          <div class="skill-tags">
+            <span>Claude AI</span>
+            <span>Google Gemini</span>
+            <span>Google Workspace</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">🤝</div>
+          <h3>Leadership &amp; Management</h3>
+          <div class="skill-tags">
+            <span>Operational Management</span>
+            <span>Team Coordination</span>
+            <span>Vendor Communication</span>
+            <span>Public Speaking</span>
+            <span>Client Negotiation</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">📋</div>
+          <h3>Business &amp; Strategy</h3>
+          <div class="skill-tags">
+            <span>Financial Record-Keeping</span>
+            <span>Content Planning</span>
+            <span>Social Media Management</span>
+            <span>Requirements Analysis (SRS)</span>
+            <span>Business Model Canvas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section achievements">
+    <div class="container">
+      <div class="section-label">Recognition</div>
+      <h2 class="section-title">Achievements &amp; Awards</h2>
+
+      <div class="achievements-grid">
+        <div class="achievement-card featured">
+          <div class="achievement-icon">🥉</div>
+          <div class="achievement-body">
+            <span class="achievement-year">2023</span>
+            <h3>Best Completer Finisher Award &amp; Bronze Medal</h3>
+            <p>2nd SEAMEO Science Olympiad (SEASO 2023)<br />2nd Runner-Up, Vocational School Category | SEAMEO RECSAM, Penang, Malaysia</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">📜</div>
+          <div class="achievement-body">
+            <span class="achievement-year">2023</span>
+            <h3>Certificate of Honor – East Java Governor</h3>
+            <p>Recognition by Governor Khofifah Indar Parawansa for representing East Java at the SEAMEO Science Olympiad, Malaysia.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">🌍</div>
+          <div class="achievement-body">
+            <span class="achievement-year">2026</span>
+            <h3>Indonesia Youth Representative – Washington D.C.</h3>
+            <p>Selected as one of two youth representatives from Indonesia for the "Leaders of Change: Youth, AI, and the Future of Work" forum.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">🏆</div>
+          <div class="achievement-body">
+            <span class="achievement-year">2026</span>
+            <h3>Youth Advisory Board Member – Save the Children</h3>
+            <p>Competitively selected from hundreds of S2S alumni across East Java and West Java. Role spans 2026–2028.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificates -->
+      <div class="certs-section">
+        <h3 class="certs-title">Certifications &amp; Training</h3>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-img-placeholder" data-label="Certificate Image">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="8" width="40" height="30" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 14h40" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="24" cy="28" r="6" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M20 36l4-4 4 4" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <span>Add Certificate Image</span>
+            </div>
+            <div class="cert-body">
+              <span class="cert-year">2025</span>
+              <h4>Berinovasi dengan AI</h4>
+              <p>Training Completion – 15 Learning Hours<br />Plan International Indonesia × Kemenpora × AVPN | Supported by ADB &amp; Google.org</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-img-placeholder" data-label="Certificate Image">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="8" width="40" height="30" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 14h40" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="24" cy="28" r="6" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M20 36l4-4 4 4" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <span>Add Certificate Image</span>
+            </div>
+            <div class="cert-body">
+              <span class="cert-year">2026</span>
+              <h4>English Proficiency Test</h4>
+              <p>UPN Veteran Jawa Timur<br />Score: 490</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-img-placeholder" data-label="Certificate Image">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="8" width="40" height="30" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 14h40" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="24" cy="28" r="6" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M20 36l4-4 4 4" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <span>Add Certificate Image</span>
+            </div>
+            <div class="cert-body">
+              <span class="cert-year">2023</span>
+              <h4>TOEFL Prediction Test</h4>
+              <p>Score: 550<br />English Proficiency Assessment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-desc">Open to collaborations, opportunities, and interesting conversations.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:aflahputra45@gmail.com" class="contact-item">
+            <div class="contact-item-icon">📧</div>
+            <div>
+              <span class="contact-item-label">Email</span>
+              <span class="contact-item-value">aflahputra45@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+6208983306299" class="contact-item">
+            <div class="contact-item-icon">📱</div>
+            <div>
+              <span class="contact-item-label">Phone / WhatsApp</span>
+              <span class="contact-item-value">08983306299</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/achmad-adelard-aflah" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon">💼</div>
+            <div>
+              <span class="contact-item-label">LinkedIn</span>
+              <span class="contact-item-value">linkedin.com/in/achmad-adelard-aflah</span>
+            </div>
+          </a>
+          <a href="https://github.com/AflahPutra45" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon">🐙</div>
+            <div>
+              <span class="contact-item-label">GitHub</span>
+              <span class="contact-item-value">github.com/AflahPutra45</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-cta-box">
+          <h3>Available for Opportunities</h3>
+          <p>Whether it's an internship, project collaboration, or just a conversation about digital business and social impact — I'd love to hear from you.</p>
+          <a href="mailto:aflahputra45@gmail.com" class="btn btn-primary">Send a Message</a>
+          <a href="https://linkedin.com/in/achmad-adelard-aflah" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:0.75rem;">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>© 2026 Achmad Adelard Aflah Afi Putra · Built with Precision from Surabaya</p>
+        <p class="footer-sub">Digital Business · Operations · Tech · Social Impact</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
