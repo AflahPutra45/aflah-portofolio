@@ -334,19 +334,38 @@ img { max-width: 100%; display: block; }
 
 /* Experience photo placeholders */
 .timeline-photos {
-  display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
 }
+.exp-photo-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.exp-photo-wrap img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.3s ease;
+}
+.exp-photo-wrap:hover img { transform: scale(1.06); }
+.exp-photo-wrap .exp-photo-placeholder {
+  display: none; /* tersembunyi by default, muncul hanya jika gambar gagal load */
+  position: absolute; inset: 0; width: 100%; height: 100%;
+}
+
 .exp-photo-placeholder {
-  width: 110px; height: 80px;
+  aspect-ratio: 4 / 3;
   border: 1.5px dashed var(--border2);
   border-radius: var(--radius-sm);
   display: flex; align-items: center; justify-content: center;
   font-size: 0.7rem; color: var(--text3);
-  cursor: pointer; transition: all var(--transition);
+  transition: all var(--transition);
   background: var(--bg3);
 }
 .exp-photo-placeholder::after { content: attr(data-label); }
-.exp-photo-placeholder:hover { border-color: var(--accent); color: var(--accent); background: rgba(79,168,232,0.05); }
+.exp-photo-placeholder:hover { border-color: var(--accent); color: var(--accent); }
 
 /* Education */
 .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
@@ -416,6 +435,7 @@ img { max-width: 100%; display: block; }
   display: flex; align-items: center; justify-content: center;
   background: linear-gradient(135deg, var(--bg3), var(--surface));
 }
+.project-img img ~ .project-img-placeholder { display: none; }
 .project-img-placeholder span {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.1rem; font-weight: 700;
@@ -515,8 +535,23 @@ img { max-width: 100%; display: block; }
 }
 .cert-card:hover { border-color: var(--border2); transform: translateY(-3px); }
 
+.cert-img-wrap {
+  position: relative; height: 160px;
+  background: var(--bg3); border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.cert-img-wrap img {
+  width: 100%; height: 100%; object-fit: cover;
+  display: block; transition: transform 0.4s ease;
+}
+.cert-card:hover .cert-img-wrap img { transform: scale(1.04); }
+.cert-img-wrap .cert-img-placeholder {
+  position: absolute; inset: 0; border-bottom: none;
+  display: none;
+}
+
 .cert-img-placeholder {
-  height: 140px; background: var(--bg3);
+  height: 160px; background: var(--bg3);
   border-bottom: 1px solid var(--border);
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
@@ -632,7 +667,7 @@ img { max-width: 100%; display: block; }
   .timeline-dot { left: -20px; width: 12px; height: 12px; }
   .timeline-card { padding: 16px; }
   .timeline-header { flex-direction: column; gap: 6px; }
-  .timeline-photos { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 8px; }
+  .timeline-photos { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
 
   /* Projects */
   .projects-grid { grid-template-columns: 1fr; }
