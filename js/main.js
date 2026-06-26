@@ -61,6 +61,13 @@ document.querySelectorAll(
   observer.observe(el);
 });
 
+document.querySelectorAll('.section-label, .section-title').forEach((el, i) => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = `opacity 0.6s ease ${i % 2 * 0.12}s, transform 0.6s ease ${i % 2 * 0.12}s`;
+  observer.observe(el);
+});
+
 document.addEventListener('animationend', () => {}, { once: true });
 
 // Make observed elements visible when triggered
