@@ -603,6 +603,7 @@ img { max-width: 100%; display: block; }
 .projects,
 .achievements {
   background: #0a5c54;
+  color: var(--text);
   --bg: #0a5c54;
   --surface: rgba(255,255,255,0.08);
   --surface2: rgba(255,255,255,0.14);
@@ -617,6 +618,13 @@ img { max-width: 100%; display: block; }
   --gold: #fef3c7;
   --shadow: 0 8px 32px rgba(0,0,0,0.28);
   --shadow-lg: 0 20px 60px rgba(0,0,0,0.38);
+}
+
+/* Section titles in yellow on dark bg */
+.about .section-title,
+.projects .section-title,
+.achievements .section-title {
+  color: #fefbb0;
 }
 
 /* Hardcoded rgba overrides for dark sections */
