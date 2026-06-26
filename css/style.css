@@ -604,11 +604,14 @@ img { max-width: 100%; display: block; }
 .achievements {
   background: #0a5c54;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: var(--text);
   position: relative;
   clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 60px), 0 100%);
   padding-top: 160px;
   padding-bottom: 160px;
+=======
+>>>>>>> parent of 159f550 (penyesuaian warna title dari gelap jadi terang)
 =======
 >>>>>>> parent of 159f550 (penyesuaian warna title dari gelap jadi terang)
   --bg: #0a5c54;
