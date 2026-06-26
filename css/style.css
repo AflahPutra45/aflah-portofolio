@@ -2,15 +2,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #fffde8;
-  --bg2: #fefbb0;
+  --bg: #ffffff;
+  --bg2: #f4f8f7;
   --bg3: #eef9f6;
   --surface: #cceee8;
   --surface2: #b4e6de;
   --border: rgba(13,148,136,0.25);
   --border2: rgba(13,148,136,0.45);
   --accent: #0d9488;
-  --accent2: #fefbb0;
+  --accent2: #2dd4bf;
   --accent-glow: rgba(13,148,136,0.22);
   --accent-dark: #0a7068;
   --text: #0c2620;
@@ -53,7 +53,7 @@ img { max-width: 100%; display: block; }
   transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
 }
 .navbar.scrolled {
-  background: rgba(254,251,176,0.92);
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(16px);
   box-shadow: 0 1px 0 var(--border);
 }
@@ -637,7 +637,7 @@ img { max-width: 100%; display: block; }
   .nav-links.open {
     display: flex; flex-direction: column;
     position: fixed; top: 68px; left: 0; right: 0;
-    background: rgba(254,251,176,0.98);
+    background: rgba(255,255,255,0.98);
     backdrop-filter: blur(20px);
     padding: 24px; gap: 20px;
     border-bottom: 1px solid var(--border);
